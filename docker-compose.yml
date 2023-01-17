@@ -12,6 +12,10 @@ services:
     environment:
       - DB_PASSWORD=qwerty
       - DB_HOST=db
+      - DB_SSLMODE=disable
+      - DB_USERNAME=postgres
+      - DB_NAME=postgres
+      - DB_PORT=5432
 
 
   db:

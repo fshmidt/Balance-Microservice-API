@@ -23,7 +23,7 @@
 - Работа с фреймворком [gin-gonic/gin](https://github.com/gin-gonic/gin).
 - Работа с СУБД Postgres с использованием библиотеки [sqlx](https://github.com/jmoiron/sqlx) и написанием SQL запросов.
 - Конфигурация приложения - библиотека [viper](https://github.com/spf13/viper).
-- Запуск бд из Docker.
+- Запуск из Docker.
 **Структура проекта:**
 ```
 .
