@@ -56,14 +56,16 @@
 # Запуск
 
 ```
-make build
-make run
+go run cmd/main.go
 ```
 
 Если приложение запускается впервые, необходимо применить миграции к базе данных:
 
 ```
+docker pull postgres
+docker run --name=balance-db -e POSTGRES_PASSWORD='qwerty' -p 5436:5432 -d --rm postgres
 migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5436/postgres?sslmode=disable' up
+go mod tidy
 ```
 
 
